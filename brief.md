@@ -43,4 +43,8 @@ Resource: Royal Decree 6/2022 - Promulgating the Personal Data Protection Law - 
 
 Misconception in My Track
 
+A common misconception is that OAuth 2.0 is itself a login protocol. The OAuth 2.0 specification focuses on delegated access to protected resources through access tokens; it does not define a standard way to report that a user has authenticated. OpenID Connect adds that identity layer and defines an ID Token containing authentication claims. This distinction matters because an API access token and an identity token serve different purposes and must be validated for their intended use. See Section 1.1, “Introduction,” of the OpenID Connect Core 1.0 specification.
+
 Open Question
+
+How should the authority validate tokens across different government services while preventing one compromised service from exposing citizens’ identities or granting unauthorised access to other services?
