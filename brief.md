@@ -3,7 +3,7 @@ Track: Software
 
 Overview
 
-A national digital login service must let citizens access many government websites and mobile apps through one account. The system needs reliable software standards so services can confirm who a user is and control what that user may access. Artificial intelligence may help identify unusual login attempts, but its decisions must be tested for accuracy, bias, privacy, and human oversight. The mobile app should request only necessary permissions and explain why they are needed. Networking protections can reduce exposure of DNS lookups, while cybersecurity controls must defend users against phishing and account theft. Because the service handles sensitive citizen information, the authority must follow data-protection duties, limit access, and protect stored data. These areas must work together so login is usable, secure, and trustworthy.
+A national single sign-on service must let citizens access multiple government websites and mobile apps through one account. Its software needs clear identity and access controls, while AI may help identify suspicious login patterns but must be tested for errors and unfair outcomes. The mobile app should request only necessary permissions and explain their purpose. Network protections such as DNS over HTTPS can reduce exposure of DNS queries, but they do not hide all user activity. Cybersecurity controls must resist phishing, protect accounts, and limit the impact of compromised services. Because the platform handles sensitive identity data, the authority must apply Oman’s data-protection requirements, restrict access, and protect stored records. A key software decision is using OpenID Connect for user sign-in and OAuth 2.0 for delegated access to protected resources.
 
 Software
 
