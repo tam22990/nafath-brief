@@ -25,9 +25,21 @@ Resource: Google Play services and runtime permissions - https://developers.goog
 
 Networking
 
+DNS over HTTPS (DoH) sends DNS queries through encrypted HTTPS connections. It helps prevent other parties on the network from reading or modifying DNS traffic while it is in transit. However, DoH does not hide the user’s IP address, encrypt all application traffic, or prevent a website from tracking the user. The authority should assess its chosen DNS provider, logging practices, and privacy policy before deploying DoH for the login service.
+
+Resource: RFC 8484 - DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484
+
 Cybersecurity
 
+Phishing-resistant authentication prevents a stolen password or code from being enough to impersonate a user on a fake website. FIDO2/WebAuthn security keys and platform authenticators provide this protection by binding authentication to the legitimate service. SMS codes, email codes, and ordinary one-time passwords can still be stolen through phishing. Push approval with number matching improves protection against approval fatigue but is not fully phishing-resistant. The authority should prioritize FIDO/WebAuthn for high-risk accounts.
+
+Resource: Implementing Phishing-Resistant MFA - https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
+
 Data
+
+Oman’s Personal Data Protection Law requires organisations handling personal data to meet applicable legal duties, including obtaining consent where required and respecting data subjects’ rights. For the login service, the authority should explain why identity data is collected, limit collection to legitimate needs, restrict access, and protect stored records against unauthorised use. It must also follow applicable rules for data-subject requests and personal-data breaches. The authority should verify its specific duties against the law and executive regulation before launch.
+
+Resource: Royal Decree 6/2022 - Promulgating the Personal Data Protection Law - https://www.mtc.gov.om/itaportal/Data/English/DocLibrary/2024115132533256/PROMULGATING%20THE%20PERSONAL%20DATA%20PROTECTION%20LAW.pdf
 
 Misconception in My Track
 
